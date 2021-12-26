@@ -1,9 +1,10 @@
 <html>
+<!-- for the font --> <head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> </head>
 
 <body>
 
 <h1>San Jose Bike Polo<h1>
-<h4>aka the Tennis Court Reclaimation Committte</h4>
+<h6>aka the Tennis Court Reclaimation Committte</h6>
 
 <div class="nextgame">
   Wednesday the 10th at 6:30pm 
@@ -60,22 +61,31 @@
 </body>
 
 <style>
-.nextgame {
+
+body { /* The main block */
+  max-width: 400px; /* tryin for single column tidy */
+  margin:auto;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+nextgame { /* animation shenanigans here, roughly */
   display: inline-block;
   white-space: nowrap;
-  animation: floatText 15s infinite linear;
-  padding-left: 100%; /*Initial offset*/
-}
-.nextgame:hover {
-  animation-play-state: paused;
+  animation: floatText 3s infinite linear; /* how fast it goes, in seconds */
+    /* floatText is defined below */
+  animation-direction: alternate; /* gets it to swap left right and back and forth */
+  padding-left: 20%; /*Initial offset*/
 }
 @keyframes floatText {
-  to {
-    transform: translateX(-100%);
-  }
+  to { transform: translateX(-20%); } /* this says where to go, the animation to play */
 }
+.nextgame:hover {
+  animation-play-state: paused; /* this important so that people can stop the damn thing */
+}
+
   
-body { max-width: 400px; }
+
+
 </style>
   
 </html>
