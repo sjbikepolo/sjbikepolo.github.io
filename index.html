@@ -2,7 +2,7 @@
 
 <body>
 
-<h1>San Jose Bike Polo<h1>
+<h1>San Jose Bike Polo</h1>
 <h6>aka the Tennis Court Reclaimation Committte</h6>
 
 <h2>Next game/event/meet-up is...</h2>
@@ -92,7 +92,9 @@ nextgame { /* animation shenanigans here, roughly */
   padding-left: 50%; /*Initial offset*/
 }
 @keyframes floatText {
-  to { transform: translateX(-50%); } /* this says where to go, the animation to play */
+  to { 
+    transform: translateX(-50%); 
+  } /* this says where to go, the animation to play */
 }
 .nextgame:hover {
   animation-play-state: paused; /* this important so that people can stop the damn thing */
