@@ -1,24 +1,25 @@
 <html>
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="mR2trEFQ"></script>
 
 <body>
+
+<div id="main">
 
 <h1>San Jose Bike Polo</h1>
 <h6>aka the Tennis Court Reclaimation Committte</h6>
   
-<div class="fb-page" data-href="https://www.facebook.com/groups/sjbikepolo" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"></div>
 
 <h2>Next game/event/meet-up is...</h2>
 
 <div class="nextgame">
-  Wednesday the 10th at 6:30pm 
-  maybe Dec 29th 6:30pm at SharkPark 
+    very likely
+    Jan 5th 6:30pm 
+    at SharkPark (see below)
 </div>
   
 <p>
   Last updated
-  26th at 1522
+  Jan 5th at 1145
 </p>
   
 <!-- k maybe we can use this javascript to set it automatically?
@@ -77,6 +78,16 @@
   those online, or make one from a ski pole, 2" gas pipe, a hex nut, and a long
   hex bolt with a low/recessed head. We'll show you how.
 </p>
+</div>
+
+<div id="fbook">
+( warning this page contains a facebook spyware for the embed that should be below )
+<!-- begin facebook spyware -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="Dg226biB"></script>
+<div class="fb-page" data-href="https://www.facebook.com/San-Jose-Bike-Polo-892635977420456" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/San-Jose-Bike-Polo-892635977420456" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/San-Jose-Bike-Polo-892635977420456">San Jose Bike Polo</a></blockquote></div>
+<!-- end facebook spyware -->
+</div>
 
 </body>
 
@@ -86,9 +97,21 @@
 <style>
   
 body { /* The main block */
+  margin: auto;
+    max-width:810px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+div#main {
+    display:block;
+  float:left;
   max-width: 400px; /* tryin for single column tidy */
   margin: auto;
-  font-family: 'Fira Sans', sans-serif;
+}
+div#fbook {
+  float:right;
+  max-width: 400px; /* tryin for single column tidy */
+  margin: auto;
 }
 
 .nextgame { /* animation shenanigans here, roughly */
