@@ -6,6 +6,8 @@
 <div id="leftcol">
     <img id="logo" src="img/sjbikepolo_logo.png" />
 
+    <h3>BIKE POLO?</h3>
+
     <div id="instagram">
         <a href="https://www.instagram.com/sanjosebikepolo/">
         Check it on instagram:
@@ -24,19 +26,63 @@
     </p>
 
     <p>
-    And we might update this webpage frequently if people like it...
+    ...and hey that disqus thing is new give that a try -->
     </p>
 
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z_MIEQT1vI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
+<div id="next">
+
+    <h2>Next game/event/meet-up is...</h2>
+
+    <div class="nextgame">
+        very likely
+        July 21st 10:00pm
+        at SharkPark (see below)
+    </div>
+      
+    <p>
+      Last updated
+      July 21st at noon
+    </p>
+      
+    <!-- k maybe we can use this javascript to set it automatically?
+      https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html
+      -->
+
+    <img src="img/sanjosebikepolo-map.jpg" width="080%"/>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'https://www.sjbikepolo.com'; 
+    this.page.identifier = 'index'; 
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sjbikepolo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </div>
+
+
 
 
 <div id="main">
 
 <h1>San Jose Bike Polo</h1>
 <h6>aka the Tennis Court Reclaimation Committte</h6>
+
+<h3>lol what?</h3>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Z_MIEQT1vI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <h3>Where how do I get there?</h3>
 
@@ -56,8 +102,9 @@
 
 <p>
   A really dumb game that is totally fun.
-  I mean it's absurd, but the way the bicycles circle around and paths fold and branch out,
-  it's the next best thing from bombing down through traffic on 5th ave manhattan - and a lot safer.
+  I mean it's absurd, but the way the bicycles circle around and paths fold and
+  branch out, it's the next best thing from bombing down through traffic on 
+  5th ave manhattan - and a lot safer.
   Also a good excuse to break bikes, fix bikes, and hang out.
 </p>
 
@@ -106,46 +153,6 @@
 
 </div>
 
-<div id="next">
-
-    <h2>Next game/event/meet-up is...</h2>
-
-    <div class="nextgame">
-        very likely
-        July 21st 10:00pm
-        at SharkPark (see below)
-    </div>
-      
-    <p>
-      Last updated
-      July 21st at noon
-    </p>
-      
-    <!-- k maybe we can use this javascript to set it automatically?
-      https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html
-      -->
-
-    <img src="img/sanjosebikepolo-map.jpg" width="100%"/>
-
-</div>
-
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    var disqus_config = function () {
-    this.page.url = 'www.sjbikepolo.com'; 
-    this.page.identifier = 'index'; 
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://sjbikepolo.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </body>
 
@@ -156,7 +163,7 @@
   
 body { /* The main block */
   margin: auto;
-/*    max-width:810px; */
+    max-width:850px; 
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -189,7 +196,7 @@ div#main {
 }
 
 div#next {
-  float:left;
+  float:right;
   max-width: 400px; /* tryin for single column tidy */
   margin: auto;
   margin-left:1em;
